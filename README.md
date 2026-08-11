@@ -1,25 +1,76 @@
-# Mayleena — site
+# Mayleena
 
-Site estático da Mayleena, pensado para publicar gratuitamente no GitHub Pages.
+> Uma ponte entre comunidades.
 
-## Estrutura
+Mayleena é um bot desenvolvido em **C**, atualmente focado em realizar a comunicação entre **Stoat e Discord** através de uma bridge de mensagens.
 
-- `index.html` — página principal
-- `style.css` — visual e responsividade
-- `script.js` — pequenas interações
-- `assets/` — imagens da Mayleena
+O projeto está em desenvolvimento e esta é apenas a primeira etapa da Mayleena. No futuro, novas funções poderão ser adicionadas ao bot.
 
-## Publicar no GitHub Pages
+---
 
-1. Crie um repositório no GitHub.
-2. Envie todos os arquivos deste projeto para a raiz do repositório.
-3. Abra **Settings → Pages**.
-4. Em **Build and deployment**, selecione **Deploy from a branch**.
-5. Escolha a branch principal (`main`) e a pasta `/ (root)`.
-6. Salve e aguarde o GitHub Pages publicar.
+## Status atual
 
-## Antes de publicar
+- **Linguagem:** C
+- **Função principal:** Bridge Stoat ↔ Discord
+- **Website:** HTML, CSS e JavaScript
+- **Hospedagem do website:** GitHub Pages
 
-Troque os links `https://github.com/` do `index.html` pelo repositório real da Mayleena e, quando existir, pelo link real para adicionar o bot.
+---
 
-O site não depende de servidor, banco de dados ou framework: é HTML/CSS/JS puro.
+## Como funciona
+
+A Mayleena atua como uma ponte entre os dois serviços.
+
+```text
+        STOAT
+          │
+          │ mensagem
+          ▼
+      MAYLEENA
+          │
+          │ retransmissão
+          ▼
+       DISCORD
+```
+
+O processo também funciona no sentido contrário:
+
+```text
+       DISCORD
+          │
+          │ mensagem
+          ▼
+      MAYLEENA
+          │
+          │ retransmissão
+          ▼
+        STOAT
+```
+
+Quando uma mensagem é enviada em um dos lados, a Mayleena recebe o evento, identifica sua origem e retransmite o conteúdo para o canal correspondente no outro serviço.
+
+De forma simplificada:
+
+```text
+Mensagem
+   ↓
+Mayleena recebe
+   ↓
+Identifica a origem
+   ↓
+Processa a mensagem
+   ↓
+Envia para o outro serviço
+```
+
+A Mayleena também precisa reconhecer mensagens que já foram retransmitidas para evitar que elas fiquem circulando entre Stoat e Discord indefinidamente.
+
+---
+
+## Objetivo
+
+A bridge é o ponto de partida do projeto.
+
+A ideia é que a Mayleena cresça gradualmente a partir dessa base, mantendo sua função principal enquanto novas possibilidades forem desenvolvidas.
+
+**Ela começou como uma ponte.**
