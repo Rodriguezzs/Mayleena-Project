@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0710">
+  <meta name="description" content="Mayleena — um bot de bridge entre Stoat e Discord, com planos de evoluir para uma assistente virtual.">
+  <title>Mayleena — Bridge Bot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+
+  <header class="navbar">
+    <a class="brand" href="#top" aria-label="Mayleena">
+      <img src="assets/mayleena-avatar.jpg" alt="" class="brand-avatar">
+      <span>mayleena</span>
+    </a>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#comandos">Comandos</a>
+      <a href="#roadmap">Roadmap</a>
+      <a class="nav-github" href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-image" role="img" aria-label="Mayleena"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="pulse"></span> BOT ONLINE · STOAT ↔ DISCORD</div>
+        <h1>Mayleena<span>.</span></h1>
+        <p class="hero-lead">Uma pequena ponte entre comunidades.<br>Um projeto que pretende se tornar muito maior.</p>
+        <p class="hero-copy">Por enquanto, Mayleena cuida da parte simples: levar mensagens de um lado para o outro entre Stoat e Discord. No futuro, ela vai ganhar personalidade, memória e novas formas de ajudar.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#sobre">Conhecer o projeto</a>
+          <a class="button ghost" href="https://github.com/" target="_blank" rel="noreferrer">Ver código ↗</a>
+        </div>
+      </div>
+      <div class="scroll-hint">↓ role para explorar</div>
+    </section>
+
+    <section class="section intro" id="sobre">
+      <div class="section-heading">
+        <span class="kicker">01 / O PROJETO</span>
+        <h2>Simples agora.<br><em>Mais capaz depois.</em></h2>
+      </div>
+      <div class="intro-grid">
+        <div class="portrait-card">
+          <img src="assets/mayleena.png" alt="Ilustração de Mayleena">
+          <div class="portrait-label">
+            <strong>Mayleena</strong>
+            <span>bridge.bot</span>
+          </div>
+        </div>
+        <div class="intro-copy">
+          <p class="big-copy">Mayleena nasceu como um bot pequeno, feito para resolver uma necessidade específica: <strong>conectar Stoat e Discord.</strong></p>
+          <p>Ela ainda está no começo. A ideia é manter a base leve e funcional enquanto o projeto cresce aos poucos — primeiro como bridge, depois como bot mais completo e, eventualmente, como uma assistente virtual própria.</p>
+          <div class="feature-list">
+            <div class="feature">
+              <span class="feature-number">01</span>
+              <div><strong>Bridge de mensagens</strong><small>Stoat ↔ Discord, sem complicação.</small></div>
+            </div>
+            <div class="feature">
+              <span class="feature-number">02</span>
+              <div><strong>Base aberta</strong><small>Projeto pensado para ser hospedado no GitHub Pages.</small></div>
+            </div>
+            <div class="feature">
+              <span class="feature-number">03</span>
+              <div><strong>Evolução gradual</strong><small>Novos recursos entram conforme o projeto amadurece.</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section commands" id="comandos">
+      <div class="section-heading compact">
+        <span class="kicker">02 / AGORA</span>
+        <h2>O que ela faz</h2>
+        <p>Por enquanto, o foco é uma coisa só: fazer a ponte funcionar bem.</p>
+      </div>
+      <div class="command-grid">
+        <article class="command-card featured">
+          <div class="card-icon">↔</div>
+          <span class="tag">CORE</span>
+          <h3>Message Bridge</h3>
+          <p>Replica mensagens entre os dois lados da comunidade, mantendo o fluxo de conversa conectado.</p>
+          <code>Stoat → Discord<br>Discord → Stoat</code>
+        </article>
+        <article class="command-card">
+          <div class="card-icon">?</div>
+          <span class="tag">BÁSICO</span>
+          <h3>Ajuda</h3>
+          <p>Uma interface simples para descobrir os recursos disponíveis no bot.</p>
+          <code>/help</code>
+        </article>
+        <article class="command-card">
+          <div class="card-icon">⌁</div>
+          <span class="tag">STATUS</span>
+          <h3>Informações</h3>
+          <p>Mostra informações básicas sobre a Mayleena e o estado atual do projeto.</p>
+          <code>/about</code>
+        </article>
+      </div>
+    </section>
+
+    <section class="section roadmap" id="roadmap">
+      <div class="roadmap-top">
+        <div class="section-heading compact">
+          <span class="kicker">03 / DEPOIS</span>
+          <h2>Para onde ela vai</h2>
+        </div>
+        <p class="roadmap-note">Nada disso precisa acontecer de uma vez. A ideia é construir a Mayleena por etapas.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item done">
+          <div class="timeline-dot"></div>
+          <span>ATUAL</span>
+          <h3>Bridge</h3>
+          <p>Stoat ↔ Discord</p>
+        </div>
+        <div class="timeline-item current">
+          <div class="timeline-dot"></div>
+          <span>PRÓXIMO</span>
+          <h3>Bot completo</h3>
+          <p>Comandos, utilidades e personalidade.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span>FUTURO</span>
+          <h3>Assistente</h3>
+          <p>Conversação, contexto e ferramentas próprias.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span>VISÃO</span>
+          <h3>Mayleena AI</h3>
+          <p>Uma presença virtual independente do simples bridge.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-inner">
+        <div>
+          <span class="kicker">PROJETO INDEPENDENTE</span>
+          <h2>Ela ainda está aprendendo.</h2>
+          <p>E esse é justamente o ponto.</p>
+        </div>
+        <a class="button primary" href="https://github.com/" target="_blank" rel="noreferrer">Acompanhar no GitHub ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <img src="assets/mayleena-avatar.jpg" alt="">
+      <div><strong>mayleena</strong><span>bridge.bot</span></div>
+    </div>
+    <p>Feita para conectar. Construída para evoluir.</p>
+    <span class="copyright">© 2026 Mayleena</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
